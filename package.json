@@ -1,0 +1,29 @@
+{
+  "name": "chiropractic_tatiana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel serve src/[^_]*.pug --no-cache --no-source-maps",
+    "build": "parcel build src/[^_]*.pug --no-cache --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hosodaaaaa/chiropractic_tatiana.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hosodaaaaa/chiropractic_tatiana/issues"
+  },
+  "homepage": "https://github.com/hosodaaaaa/chiropractic_tatiana#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.1",
+    "parcel": "^2.0.0-beta.1",
+    "pug": "^3.0.0",
+    "reset-css": "^5.0.1",
+    "stylus": "^0.54.8"
+  }
+}
