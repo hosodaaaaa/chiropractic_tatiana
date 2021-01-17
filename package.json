@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel serve src/[^_]*.pug --no-cache --no-source-maps",
-    "build": "parcel build src/[^_]*.pug --no-cache --no-source-maps"
+    "dev": "rm dist/*; parcel src/*.pug --no-cache --target browser",
+    "build": "rm dist/*; parcel build src/*.pug --no-cache --no-source-maps --target browser",
+    "deploy": "rm dist/*; parcel build src/*.pug --no-cache --no-source-maps --target browser && gh-pages -d dist/"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,11 @@
   },
   "homepage": "https://github.com/hosodaaaaa/chiropractic_tatiana#readme",
   "devDependencies": {
+    "@parcel/transformer-stylus": "^2.0.0-beta.1",
     "autoprefixer": "^10.2.1",
-    "parcel": "^2.0.0-beta.1",
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4",
     "pug": "^3.0.0",
-    "reset-css": "^5.0.1",
     "stylus": "^0.54.8"
   }
 }
