@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rm dist/*; parcel src/*.pug --no-cache --target browser",
-    "build": "rm dist/*; parcel build src/*.pug --no-cache --no-source-maps --target browser",
-    "deploy": "rm dist/*; parcel build src/*.pug --no-cache --no-source-maps --target browser && gh-pages -d dist/"
+    "dev": "rm dist/*; parcel src/[^_]*.pug --no-cache --target browser",
+    "build": "rm dist/*; parcel build src/[^_]*.pug --no-cache --no-source-maps --target browser",
+    "deploy": "rm dist/*; parcel build src/[^_]*.pug --no-cache --no-source-maps --target browser && gh-pages -d dist/"
   },
   "repository": {
     "type": "git",
