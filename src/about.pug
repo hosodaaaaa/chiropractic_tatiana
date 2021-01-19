@@ -1,0 +1,64 @@
+extends /_layout
+
+block vars
+  -
+    const meta = {
+      title: "タチアナ治療院",
+      desc: '',
+      path: './'
+    }
+block contents
+  main.home
+    .mv-contents
+    section.concept-contents
+      h2 CONCEPT
+      P 緑豊かな町軽井沢町で
+        br
+        | 緑豊かな町軽井沢町で
+        br
+        | 緑豊かな町軽井沢町で
+        br
+        | 緑豊かな町軽井沢町で
+        br
+        | 緑豊かな町軽井沢町で
+        br
+        | 緑豊かな町軽井沢町で
+    section.treatment-contents
+      h3 治療法
+      ul.treatment-list
+        li
+          a(href="#")
+            img(src=`${path}image/hot-stone.jpg`, alt="")
+          h4.title カイロプラクティック
+          p 骨筋格系の障害とそれが及ぼす健康全般への影響を診断し、治療、予防する根本的な治療法です。
+        li
+          a(href="#")
+            img(src=`${path}image/hot-stone.jpg`, alt="")
+          h4 ホットストーン
+          p 遠赤外線で身体を温める効果があります。そのため、身体の芯から温めることができ、それによって血流が良くなり代謝も向上して、心身に様々な効果が期待できます。
+      a.more-link(href="#")
+        span 詳しく見る
+    section.about-contents
+      h3 当院について
+      .about-wrapper
+        .desc-box
+          p 緑豊かな町軽井沢町でささやかですが、カイロプラクティックの治療院を開業することが叶いました。私タチアナがマンツーマンで、お１人お1人のお困りの症状に寄り添った丁寧な施術を行っております。緑豊かな町軽井沢町でささやかですが、カイロプラクティックの治療院を開業することが叶いました。私タチアナがマンツーマンで、お１人お1人のお困りの症状に寄り添った丁寧な施術を行っております。
+          a.more-link(href="#")
+            span 詳しく見る
+        .img-box
+          img(src=`${path}image/clinic.jpg`, alt="タチアナ治療院")
+    section.access-contents
+      h3 アクセス
+      .access-wrapper
+        .map
+          iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3214.219372807693!2d138.55259901527077!3d36.33123278004788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601dcd8b99c6fccf%3A0xfd46903159c253bc!2z44K_44OB44Ki44OK5rK755mC6Zmi!5e0!3m2!1sja!2sjp!4v1610890100420!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
+        .desc-box
+          h4 タチアナ治療院
+          p 〒389-0115 長野県北佐久郡軽井沢町追分958-33
+            span ※駐車スペースあります
+          p Tel: 0267-41-6533
+          p 定休日: 月曜日
+          p 診療時間: AM 8:00 ～ PM 20:00
+          p 服装: 軽装 (施術は着衣のままで行います。動きやすい服装でお越し下さい。)
+          p お支払い: 現金のみ
+          p.confirm-text ※日本語、英語、ロシア語の3カ国後に対応いたします。
