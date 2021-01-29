@@ -102,3 +102,50 @@ section
 .access-contents
   max-width 1080px
   margin 0 auto
+
+@media screen and (max-width 767px)
+  section
+    &:not(:first-child)
+      padding 40px 0
+    > h3
+      font-size 26px
+
+  .title-contents
+    height 200px
+    h2
+      font-size 26px
+
+  .consultation-room-contents
+    width 100%
+    margin 0
+    .consultation-room-wrapper
+      display block
+      .img-box
+        width 90%
+        margin 0 auto
+      p
+        width 90%
+        margin 20px auto 0
+
+  .doctor-contents
+    .doctor-wrapper
+      display block
+      .img-box
+        width: 80%;
+        margin 0 auto
+      .profile-area
+        width 90%
+        margin 20px auto 0
+        .history
+          font-size: 16px;
+
+  .schedule-contents
+    max-width 100%
+    margin 0 4%
+    .concept
+      font-size 14px
+    .confirm
+      font-size 14px
+
+  .access-wrapper
+    margin: 60px 4% 0;

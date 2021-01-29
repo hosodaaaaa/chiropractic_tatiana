@@ -19,7 +19,10 @@ p
 
 body
   font-family $notoSans
-  background-color $beige
+
+main
+  &:not(.home)
+    background-color $beige
 
 li
   list-style none
@@ -30,6 +33,16 @@ img
 
 a
   text-decoration none
+
+.is-pc
+  display block
+.is-sp
+  display none
+@media screen and (max-width 767px)
+  .is-pc
+    display none
+  .is-sp
+    display block
 
 header
   width 100%
@@ -63,11 +76,6 @@ header
   text-align center
   border 2px solid #fff
   background-color #fff
-  transition .2s
-  &:hover
-    background-color $deepBeige
-    span
-      font-weight bold
   span
     font-size 20px
     color $black
@@ -92,3 +100,44 @@ header
   color $black
   font-size 12px
   text-align center
+
+@media screen and (min-width 768px)
+  a[href^="tel:"]
+    pointer-events none
+
+  .more-link
+    transition .2s
+    &:hover
+      background-color $deepBeige
+      span
+        font-weight bold
+
+@media screen and (max-width 767px)
+  header
+    height 90px
+    align-items center
+    justify-content: center;
+    max-width: 100%;
+    position fixed
+    h1
+      margin-right 18px
+    ul
+      li
+        &:nth-child(2)
+          margin 0 20px
+
+  .more-link
+    background-color $deepBeige
+    span
+      font-weight bold
+
+  .contact-contents
+    padding 80px 10% 0
+    h3
+      font-size 26px
+    a
+      margin-top 14px
+      font-size 28px
+
+  .copyright
+    padding 160px 0 15px

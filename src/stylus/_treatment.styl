@@ -49,3 +49,34 @@
     color $black
     letter-spacing .02em
     margin-top 8px
+
+@media screen and (max-width 767px)
+  .treatment-lint-contents
+    max-width 100%
+    margin-top 20px
+    .treatment-box
+      padding 20px 26px
+      margin 0 4%
+      &:not(:first-child)
+        margin-top 40px
+      h3
+        font-size 22px
+        text-align center
+        &::after
+          margin-top 22px
+      p
+        font-size 16px
+        line-height 1.8
+        margin-top 20px
+        letter-spacing .014em
+
+  .price-contents
+    margin 0 4% 0
+    .price-wrapper
+      display block
+      .price-table
+        width 100%
+        &:not(:first-child)
+          margin-top 20px
+    .confirm
+      font-size 18px

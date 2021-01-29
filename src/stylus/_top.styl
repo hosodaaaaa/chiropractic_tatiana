@@ -1,6 +1,14 @@
 .mv-contents
   width 100%
   height 100vh
+  position relative
+
+.contents-wrapper
+  background-image url('../image/bg-begie.png')
+  background-position top
+  background-size cover
+  position: relative;
+  top: 0;
 
 .home section
   padding 120px 10% 0
@@ -106,3 +114,70 @@
         font-size: 14px
       &:nth-child(2)
         margin-top 20px
+
+@media screen and (max-width 767px)
+  .mv-contents
+    height 100%
+
+  .contents-wrapper
+    padding 0 6%
+    background-image url('../image/bg-begie-sp.png')
+  .home section
+    padding 80px 0 0
+    max-width 100%
+
+  .home section > h3
+    font-size 26px
+
+  .concept-contents
+    width 100%
+    text-align center
+    h2
+      font-size 30px
+      color $black
+      letter-spacing .2em
+    p
+      font-size 14px
+      line-height 1.8
+      letter-spacing: 0.18em;
+
+  .treatment-contents
+    .treatment-list
+      display block
+      li
+        width 100%
+        min-height 380px
+        &:first-child
+          margin-right 0
+        &:last-child
+          margin-left 0
+          margin-top 40px
+        h4
+          font-size 18px
+        p
+          font-size 16px
+
+  .about-contents .about-wrapper
+    align-items center
+    justify-content center
+    flex-direction column-reverse
+    div
+      width 100%
+      &.desc-box
+        font-size 16px
+        margin-top 40px
+    .more-link
+      margin 40px auto 0
+
+  .access-contents .access-wrapper
+    align-items center
+    justify-content center
+    flex-direction column-reverse
+    .map
+      width 100%
+      margin-top 40px
+      iframe
+        width 100%
+        height 400px
+    .desc-box
+      width 100%
