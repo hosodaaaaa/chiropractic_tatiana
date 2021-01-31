@@ -1,14 +1,32 @@
 .mv-contents
   width 100%
-  height 100vh
+  max-height 700px
   position relative
+  z-index -1
+  .swiper-slide.swiper-slide-active img,
+  .swiper-slide.swiper-slide-duplicate-active img,
+  .swiper-slide.swiper-slide-prev img
+    animation scale 10s linear 0s 1 normal both
+
+  @keyframes scale
+    0%
+      transform scale(1)
+    100%
+      transform scale(1.15)
 
 .contents-wrapper
-  background-image url('../image/bg-begie.png')
-  background-position top
-  background-size cover
   position: relative;
-  top: 0;
+  &::after
+    content ""
+    position absolute
+    top -4%
+    left 0
+    background-image url('../image/bg-begie.png')
+    background-position top
+    background-size cover
+    width 100%
+    height 100%
+    display block
 
 .home section
   padding 120px 10% 0
