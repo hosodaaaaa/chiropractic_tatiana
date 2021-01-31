@@ -28,7 +28,14 @@
     height 100%
     display block
 
-.home section
+.contents-wrapper
+  > section,
+  > div,
+  > p
+    position relative
+    z-index 10
+
+.home section:not(.concept-contents)
   padding 120px 10% 0
   max-width 1080px
   margin 0 auto
@@ -39,7 +46,7 @@
   letter-spacing .2em
 
 .concept-contents
-  width 100%
+  padding-top 0
   text-align center
   h2
     font-size 30px
@@ -71,6 +78,8 @@
       a
         display block
         height: 41%;
+        overflow hidden
+        border-radius 8px 8px 0 0
         img
           border-radius 8px 8px 0 0
       h4
@@ -133,13 +142,28 @@
       &:nth-child(2)
         margin-top 20px
 
+
+@media screen and (min-width 768px)
+  .treatment-list
+    li a
+      img
+        transition .4s
+      &:hover
+        img
+          transform scale(1.1)
+
+
 @media screen and (max-width 767px)
   .mv-contents
-    height 100%
+    max-height 100%
 
   .contents-wrapper
     padding 0 6%
-    background-image url('../image/bg-begie-sp.png')
+    &::after
+      top -1%
+      background-image url('../image/bg-begie-sp.png')
+      background-position top
+      background-size cover
   .home section
     padding 80px 0 0
     max-width 100%

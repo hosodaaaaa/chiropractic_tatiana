@@ -11,7 +11,7 @@ block head
   link(rel="stylesheet", href=`${path}/stylus/index.styl`)
 block contents
   main
-    section.title-contents
+    section.title-contents.about
       h2 当院について
     section.concept-contents
       P.is-pc 美しい山と緑に囲まれた当院で私タチアナが
@@ -63,8 +63,9 @@ block contents
         | 一回の施術時間はお客様お1人お1人のご都合と
         br
         | お体の状態によって異なりますのでご了承ください
-      .img-box
-        img(src=`${path}image/schedule.svg`, alt="営業日")
+      .schedule-box
+        .img-box
+          img(src=`${path}image/schedule.svg`, alt="営業日")
       p.confirm ※診察は
         span 要予約
         | とさせていただいております。

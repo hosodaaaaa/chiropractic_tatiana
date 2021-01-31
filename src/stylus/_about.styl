@@ -10,10 +10,18 @@ section
 .title-contents
   width 100%
   height 400px
-  background-image url('../image/bg_2.png')
-  background-position center
   background-size cover
   position relative
+  &::after
+    content: ""
+    width 100%
+    height 100%
+    display block
+    background-color rgba(0,0,0,.3)
+
+.title-contents.about
+  background-image url('../image/about-bg.jpg')
+  background-position 100% 65%
   h2
     font-size 50px
     color #fff
@@ -110,7 +118,7 @@ section
     > h3
       font-size 26px
 
-  .title-contents
+  .title-contents.about
     height 200px
     h2
       font-size 26px
@@ -125,25 +133,39 @@ section
         margin 0 auto
       p
         width 90%
+        font-size 16px
         margin 20px auto 0
 
   .doctor-contents
     .doctor-wrapper
       display block
       .img-box
-        width: 80%;
+        width: 60%;
         margin 0 auto
       .profile-area
         width 90%
         margin 20px auto 0
+        h3
+          font-size 18px
+        h2
+          font-size 20px
+          span
+            font-size 16px
         .history
           font-size: 16px;
+        .profile
+          font-size 14px
 
   .schedule-contents
     max-width 100%
     margin 0 4%
     .concept
       font-size 14px
+    .schedule-box
+      overflow-x scroll
+      .img-box
+        width 700px
+        height auto
     .confirm
       font-size 14px
 

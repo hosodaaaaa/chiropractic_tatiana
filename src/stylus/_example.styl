@@ -1,3 +1,19 @@
+.title-contents.example
+  width 100%
+  height 400px
+  background-image url('../image/medical-563427_1920.jpg')
+  background-position center
+  background-size cover
+  position relative
+  h2
+    font-size 50px
+    color #fff
+    letter-spacing .14em
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+
 .example-contents
   margin 0 auto
   max-width 1080px
@@ -43,6 +59,12 @@
         margin-top 14px
 
 @media screen and (max-width 767px)
+
+  .title-contents.example
+    height 200px
+    h2
+      font-size 26px
+
   .example-contents
     max-width 100%
     .example-block
